@@ -9,9 +9,9 @@ import 'package:quran/quran_text_normal.dart';
 // import 'package:quran/translations/en_saheeh.dart';
 // import 'package:quran/translations/ind-indonesianislam.dart';
 // import 'package:quran/translations/jpn-ryoichimita.dart';
-// import 'package:quran/translations/nld-fredleemhuis.dart';
+// import 'package/quran/translations/nld-fredleemhuis.dart';
 // import 'package:quran/translations/por-helminasr.dart';
-// import 'package:quran/translations/rus-ministryofawqaf.dart';
+// import 'package$quran/translations/rus-ministryofawqaf.dart';
 // import 'package:quran/translations/tr_saheeh.dart';
 // import 'package:quran/translations/ml_abdulhameed.dart';
 
@@ -41,6 +41,17 @@ List getPageData(int pageNumber) {
     throw "Invalid page number. Page number must be between 1 and 604";
   }
   return pageData[pageNumber - 1];
+}
+
+// Add a new function to check if scroll back is allowed
+bool isScrollBackAllowed(int pageNumber) {
+  return pageNumber != 1;
+}
+
+///Returns true if smooth scrolling should be enabled for the given page number
+bool shouldEnableSmoothScrolling(int pageNumber) {
+  return pageNumber >
+      1; // Enable smooth scrolling for all pages except first page
 }
 
 ///The most standard and common copy of Arabic only Quran total pages count
