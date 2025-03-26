@@ -33,4 +33,8 @@ class HomeController extends GetxController {
     Get.put(QuranPageController());
     Get.toNamed('/quran-page');
   }
+
+  void navigateToAudioPage() {
+    Get.toNamed('/quran-audio');
+  }
 }

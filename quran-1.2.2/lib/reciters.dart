@@ -1,94 +1,24 @@
-List reciters = [{
-"identifier": "ar.abdulbasitmurattal",
-"language": "ar",
-"name": "عبد الباسط عبد الصمد المرتل",
-"englishName": "Abdul Basit (muratal)",
-"format": "audio",
-"type": "translation",
-"direction": null
-},{
-    "identifier": "ar.abdulsamad",
+List reciters = [
+  {
+    "identifier": "abdulbaset_abdul_samad",
     "language": "ar",
-    "name": "عبدالباسط عبدالصمد",
-    "englishName": "Abdul Basit (Mujawwad)",
+    "name": "عبد الباسط عبد الصمد",
+    "englishName": "Abdul Basit",
     "format": "audio",
     "type": "versebyverse",
     "direction": null
   },
   {
-    "identifier": "ar.abdullahbasfar",
-    "language": "ar",
-    "name": "عبد الله بصفر",
-    "englishName": "Abdullah Basfar",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },{
-"identifier": "ar.minshawi",
-"language": "ar",
-"name": "محمد صديق المنشاوي",
-"englishName": "Minshawi",
-"format": "audio",
-"type": "translation",
-"direction": null
-},
-{
-"identifier": "ar.minshawimujawwad",
-"language": "ar",
-"name": "محمد صديق المنشاوي (المجود)",
-"englishName": "Minshawy (Mujawwad)",
-"format": "audio",
-"type": "translation",
-"direction": null
-},
-  {
-    "identifier": "ar.abdurrahmaansudais",
-    "language": "ar",
-    "name": "عبدالرحمن السديس",
-    "englishName": "Abdurrahmaan As-Sudais",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  
-  {
-    "identifier": "ar.shaatree",
-    "language": "ar",
-    "name": "أبو بكر الشاطري",
-    "englishName": "Abu Bakr Ash-Shaatree",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.ahmedajamy",
-    "language": "ar",
-    "name": "أحمد بن علي العجمي",
-    "englishName": "Ahmed ibn Ali al-Ajamy",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.alafasy",
+    "identifier": "mishaari_raashid_al_3afaasee",
     "language": "ar",
     "name": "مشاري العفاسي",
-    "englishName": "Alafasy",
+    "englishName": "Mishary Alafasy",
     "format": "audio",
     "type": "versebyverse",
     "direction": null
   },
   {
-    "identifier": "ar.hanirifai",
-    "language": "ar",
-    "name": "هاني الرفاعي",
-    "englishName": "Hani Rifai",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.husary",
+    "identifier": "mahmoud_khalil_alhusary",
     "language": "ar",
     "name": "محمود خليل الحصري",
     "englishName": "Husary",
@@ -97,43 +27,25 @@ List reciters = [{
     "direction": null
   },
   {
-    "identifier": "ar.husarymujawwad",
+    "identifier": "muhammad_siddiq_al_minshawi",
     "language": "ar",
-    "name": "محمود خليل الحصري (المجود)",
-    "englishName": "Husary (Mujawwad)",
+    "name": "محمد صديق المنشاوي",
+    "englishName": "Minshawi",
     "format": "audio",
     "type": "versebyverse",
     "direction": null
   },
   {
-    "identifier": "ar.hudhaify",
+    "identifier": "as-sudais",
     "language": "ar",
-    "name": "علي بن عبدالرحمن الحذيفي",
-    "englishName": "Hudhaify",
+    "name": "عبدالرحمن السديس",
+    "englishName": "Abdurrahman As-Sudais",
     "format": "audio",
     "type": "versebyverse",
     "direction": null
   },
   {
-    "identifier": "ar.ibrahimakhbar",
-    "language": "ar",
-    "name": "إبراهيم الأخضر",
-    "englishName": "Ibrahim Akhdar",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.mahermuaiqly",
-    "language": "ar",
-    "name": "ماهر المعيقلي",
-    "englishName": "Maher Al Muaiqly",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.muhammadayyoub",
+    "identifier": "muhammad_ayyoub",
     "language": "ar",
     "name": "محمد أيوب",
     "englishName": "Muhammad Ayyoub",
@@ -142,37 +54,10 @@ List reciters = [{
     "direction": null
   },
   {
-    "identifier": "ar.muhammadjibreel",
+    "identifier": "ali_al_hudhaify",
     "language": "ar",
-    "name": "محمد جبريل",
-    "englishName": "Muhammad Jibreel",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.saoodshuraym",
-    "language": "ar",
-    "name": "سعود الشريم",
-    "englishName": "Saood bin Ibraaheem Ash-Shuraym",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.parhizgar",
-    "language": "ar",
-    "name": "شهریار پرهیزگار",
-    "englishName": "Parhizgar",
-    "format": "audio",
-    "type": "versebyverse",
-    "direction": null
-  },
-  {
-    "identifier": "ar.aymanswoaid",
-    "language": "ar",
-    "name": "أيمن سويد",
-    "englishName": "Ayman Sowaid",
+    "name": "علي الحذيفي",
+    "englishName": "Ali Al-Hudhaify",
     "format": "audio",
     "type": "versebyverse",
     "direction": null

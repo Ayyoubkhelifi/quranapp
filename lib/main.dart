@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:quranapp/views/my_home_page.dart';
 import 'package:quranapp/views/quran_page.dart';
 import 'package:quranapp/views/quran_sura_page.dart';
+import 'package:quranapp/views/quran_audio_page.dart';
 
 void main() {
   // Initialize the binding first
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
             getPages: [
               GetPage(name: '/', page: () => const MyHomePage()),
               GetPage(name: '/quran-page', page: () => QuranPage()),
+              GetPage(name: '/quran-audio', page: () => QuranAudioPage()),
               GetPage(
                 name: '/quran-view-page',
                 page:
