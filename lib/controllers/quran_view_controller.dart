@@ -81,6 +81,19 @@ class QuranViewController extends GetxController {
     // Set the observable index to match our initial page
     index.value = actualInitialPage;
 
+    // Ensure we're on the correct page by explicitly jumping to it after initialization
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (actualInitialPage > 1) {
+        // Add a small delay to ensure the PageView is fully initialized
+        Future.delayed(const Duration(milliseconds: 50), () {
+          pageController.jumpToPage(actualInitialPage);
+          print(
+            "Jumping to page $actualInitialPage from initialPageNumber $initialPageNumber",
+          );
+        });
+      }
+    });
+
     if (initialShouldHighlightText) {
       highlightVerseFunction();
     }
@@ -265,9 +278,23 @@ class QuranViewController extends GetxController {
   void jumpToPage(int page) {
     if (page >= 1 && page <= totalPagesCount) {
       addToNavigationHistory(index.value);
-      pageController.jumpToPage(page);
-      index.value = page;
-      _updateBoundaryIndicators(page);
+      // Ensure page controller is attached before jumping
+      if (pageController.hasClients) {
+        print("Jumping to page $page");
+        pageController.jumpToPage(page);
+        index.value = page;
+        _updateBoundaryIndicators(page);
+      } else {
+        // If controller isn't ready, schedule the jump for later
+        print("Page controller not ready, scheduling jump to $page");
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (pageController.hasClients) {
+            pageController.jumpToPage(page);
+            index.value = page;
+            _updateBoundaryIndicators(page);
+          }
+        });
+      }
     }
   }
 

@@ -184,12 +184,16 @@ class QuranPage extends StatelessWidget {
             style: const TextStyle(fontSize: 14, height: 1.5),
           ),
           onTap: () {
+            final pageNum = getPageNumber(verse['surah'], verse['verse']);
+            print(
+              'Navigating to page $pageNum for surah ${verse["surah"]}, verse ${verse["verse"]}',
+            );
             Get.toNamed(
               '/quran-view-page',
               arguments: {
                 'shouldHighlightText': true,
                 'highlightVerse': verse['text'],
-                'pageNumber': getPageNumber(verse['surah'], verse['verse']),
+                'pageNumber': pageNum,
               },
             );
           },
@@ -260,13 +264,15 @@ class QuranPage extends StatelessWidget {
               ),
             ),
             onTap: () {
+              final pageNum = getPageNumber(suraNumberInQuran, 1);
+              print('Navigating to page $pageNum for surah $suraNumberInQuran');
               Get.toNamed(
                 '/quran-view-page',
                 arguments: {
                   'shouldHighlightText': false,
                   'highlightVerse': "",
                   'jsonData': controller.filteredData[index],
-                  'pageNumber': getPageNumber(suraNumberInQuran, 1),
+                  'pageNumber': pageNum,
                 },
               );
             },

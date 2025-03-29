@@ -24,7 +24,7 @@ android {
         applicationId = "com.example.quranapp"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = 21 // Ensure minSdk is at least 21 for FlutterFragmentActivity
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -37,6 +37,19 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+}
+
+dependencies {
+    implementation("androidx.fragment:fragment:1.3.6")
+    implementation("androidx.media:media:1.4.3")
+    implementation("androidx.appcompat:appcompat:1.4.1")
+    // Add enhanced media session support
+    implementation("androidx.media3:media3-common:1.2.1")
+    implementation("androidx.media3:media3-session:1.2.1")
+    // Add notification support
+    implementation("androidx.core:core:1.12.0")
+    implementation("com.google.android.exoplayer:exoplayer-core:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer-ui:2.19.1")
 }
 
 flutter {
